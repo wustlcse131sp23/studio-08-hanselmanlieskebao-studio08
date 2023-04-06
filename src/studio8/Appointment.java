@@ -1,5 +1,6 @@
 package studio8;
 
+import java.util.HashSet;
 import java.util.Objects;
 
 public class Appointment {
@@ -20,6 +21,10 @@ public class Appointment {
 	    
 		Appointment one = new Appointment(c,d);
 		Appointment two = new Appointment(e,f);
+		
+    	HashSet<Appointment> set = new HashSet<Appointment>();
+    	set.add(one);
+    	set.add(two);
 	}
 
 	@Override
